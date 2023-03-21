@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Лабораторная 2</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__wrapper">
+            <a href="https://mospolytech.ru/" class="header__link"><img src="img/mospolytech.png" alt="university" class="header__logo"></a>
+            <a href="https://github.com/nazaitseva/php.git" class="header__link"><img src="img/github.png" alt="github" class="header__github"></a>
+        </div>
+    </header>
+    <main>
+        <section class="form">
+            <div class="form__wrapper">
+                <h1 class="form__heading">Домашняя работа: Feedback Form</h1>
+                <form method="post" action="https://httpbin.org/post">
+                    <label class="form__label label">
+                        <span>Имя</span>
+                        <input class="label__input" type="text" name="name" id="" placeholder="Введите ваше имя"
+                            required>
+                    </label>
+                    <label class="form__label label">
+                        <span>E-mail</span>
+                        <input class="label__input" type="email" name="e-mail" id="" placeholder="Введите вашу почту"
+                            required>
+                    </label>
+                    <label class="form__label label">
+                        <span>Тип обращения</span>
+                        <select name="select" class="label__select">
+                            <option name="bad">Жалоба</option>
+                            <option name="qustions">Предложение</option>
+                            <option name="good">Благодарность</option>
+                        </select>
+                    </label>
+                    <label class="form__label label">
+                        <span>Текст обращения</span>
+                        <textarea class="label__textarea" name="text" id="" cols="30" rows="10"></textarea>
+                    </label>
+                    <div class="form__checkbox checkbox">
+                        <span>Вариант ответа</span>
+                        <label class="checkbox__custom">
+                            <input type="checkbox" name="sms">
+                            <span>SMS</span>
+                        </label>
+                        <label class="checkbox__custom">
+                            <input type="checkbox" name="mail">
+                            <span>E-mail</span>
+                        </label>
+                    </div>
+                    <button class="form__button" type="submit">Отправить</button>
+                </form>
+            </div>
+        </section>
+        <section class="link">
+            <div class="link__wrapper">
+                <a href="form.php">Результат работы функции get_headers</a>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <p class="footer__text">Разработано Зайцевой Натальей Александровной, Московский Политех, группа 221-322, 2023 год</p>
+        </div>
+    </footer>
+</body>
+</html>
