@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    height: 100vh;
+}
+
+body {
+    height: 100%;
+    overflow-x: hidden;
+    font-family: 'Inter';
+    background: #212121;
+}
+
+.header__wrapper,
+.footer__wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.header,
+.footer {
+    background: #0D7377;
+}
+
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.header__logo {
+    width: 350px;
+    margin-left: -50px;
+}
+
+.header__heading {
+    color: #212121;
+    font-size: 32px;
+}
+
+.header__github {
+    width: 80px;
+}
+
+table {
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #0D7377;
+}
+
+th {
+    background-color: #0D7377;
+    color: white;
+}
+
+th, td {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 30px;
+}
+
+tr:hover {
+    background-color: #c4dae7;
+    cursor: pointer;
+}
+
+.img_arr {
+    display: flex;
+    gap: 30px;
+    margin: 15px;
+}
+
+.footer {
+    padding: 50px 0;
+    position: sticky;
+    top: 100vh;
+}
+
+.footer__text {
+    color: #212121;
+    font-size: 18px;
+}
